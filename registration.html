@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question Bank Registration</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>QUESTION BANK</h1>
+        <h3>Student Registration Form</h3>
+    </center>
+
+    <hr>
+
+    <form action="home.html">
+
+        <table cellpadding="8">
+
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td>Roll Number</td>
+                <td><input type="text" name="roll" required></td>
+            </tr>
+
+            <tr>
+                <td>Registration Number</td>
+                <td><input type="text" name="reg"></td>
+            </tr>
+
+            <tr>
+                <td>Department</td>
+                <td>
+                    <select name="dept">
+                        <option>Computer Science & Engineering</option>
+                        <option>Information Technology</option>
+                        <option>Electrical Engineering</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Civil Engineering</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Semester</td>
+                <td>
+                    <select name="semester">
+                        <option>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="tel" name="mobile"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Photograph</td>
+                <td><input type="file"></td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>
