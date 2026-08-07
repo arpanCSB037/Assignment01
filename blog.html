@@ -9,6 +9,18 @@
     <center>
         <h1>Student Feedback</h1>
         <h3>Comments on the Online Question Papers</h3>
+        <hr>
+
+        <h2>Student Opinion Video</h2>
+
+        <video width="500" controls>
+            <source src="videos/review.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>
+            <b>Description:</b> Students sharing their opinions about the online question papers.
+        </p>
 
         <hr>
 
@@ -23,7 +35,7 @@
                 <td>
                     <img src="arpan" width="100" height="100">
                 </td>
-                <td>Rahul</td>
+                <td>Rakesh</td>
                 <td>
                     The questions were easy to understand. Overall the paper was good.
                 </td>
@@ -33,7 +45,7 @@
                 <td>
                     <img src="arpan" width="100" height="100">
                 </td>
-                <td>Priya</td>
+                <td>Puja</td>
                 <td>
                     The DBMS paper was interesting. Some questions were a little difficult.
                 </td>
@@ -43,12 +55,65 @@
                 <td>
                     <img src="arpan" width="100" height="100">
                 </td>
-                <td>Amit</td>
+                <td>Aman</td>
                 <td>
                     The Operating System questions were simple and covered basic concepts.
                 </td>
             </tr>
         </table>
+
+        <hr>
+
+        <h2>Add Your Comment</h2>
+
+        <form>
+
+            <table cellpadding="8">
+
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Upload Photo</td>
+                    <td>
+                        <input type="file" name="photo" accept="image/*">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Upload Opinion Video</td>
+                    <td>
+                        <input type="file" name="video" accept="video/*">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Comment</td>
+                    <td>
+                        <textarea rows="5" cols="40" placeholder="Write your feedback here..."></textarea>
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <input type="submit" value="Post Comment">
+            <input type="reset" value="Clear">
+
+        </form>
+
     </center>
 
 </body>
