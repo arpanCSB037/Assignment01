@@ -20,86 +20,141 @@
 
             <tr>
                 <td>Name</td>
-                <td><input type="text" name="name" required></td>
+                <td>
+                    <input type="text" name="name" placeholder="Enter your full name" pattern="[A-Za-z ]+"
+                        title="Name should contain only alphabets and spaces." required>
+                </td>
             </tr>
 
             <tr>
                 <td>Roll Number</td>
-                <td><input type="text" name="roll" required></td>
+                <td>
+                    <input type="text" name="roll" placeholder="Example: CS2026" pattern="[0-9]{4}[A-Z]{3}[0-9]{3}"
+                        title="Roll Number should be in the format CS2026." required>
+                </td>
             </tr>
 
             <tr>
                 <td>Registration Number</td>
-                <td><input type="text" name="reg"></td>
+                <td>
+                    <input type="text" name="reg" placeholder="Enter Registration Number" required>
+                </td>
             </tr>
 
             <tr>
                 <td>Department</td>
                 <td>
-                    <select name="dept">
-                        <option>Computer Science & Engineering</option>
-                        <option>Information Technology</option>
-                        <option>Electrical Engineering</option>
-                        <option>Mechanical Engineering</option>
-                        <option>Civil Engineering</option>
-                    </select>
+
+                    <input type="text" name="department" list="departmentList" placeholder="Enter Department" required>
+
+                    <datalist id="departmentList">
+
+                        <option value="Computer Science & Engineering">
+                        <option value="Information Technology">
+                        <option value="Electronics & Communication Engineering">
+                        <option value="Electrical Engineering">
+                        <option value="Mechanical Engineering">
+                        <option value="Civil Engineering">
+
+                    </datalist>
+
                 </td>
             </tr>
 
             <tr>
                 <td>Semester</td>
                 <td>
-                    <select name="semester">
+
+                    <select name="semester" required>
+
+                        <option value="">--Select Semester--</option>
+
                         <option>Semester 1</option>
                         <option>Semester 2</option>
                         <option>Semester 3</option>
                         <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
+
                     </select>
+
                 </td>
             </tr>
 
             <tr>
                 <td>Gender</td>
+
                 <td>
-                    <input type="radio" name="gender"> Male
-                    <input type="radio" name="gender"> Female
-                    <input type="radio" name="gender"> Other
+
+                    <input type="radio" name="gender" value="Male" required> Male
+
+                    <input type="radio" name="gender" value="Female"> Female
+
+                    <input type="radio" name="gender" value="Other"> Other
+
                 </td>
             </tr>
 
             <tr>
                 <td>Date of Birth</td>
-                <td><input type="date" name="dob"></td>
+
+                <td>
+
+                    <input type="date" name="dob" min="2000-01-01" max="2010-12-31" required>
+
+                </td>
             </tr>
 
             <tr>
                 <td>Mobile Number</td>
-                <td><input type="tel" name="mobile"></td>
+
+                <td>
+
+                    <input type="tel" name="mobile" placeholder="9876543210" pattern="[0-9]{10}"
+                        title="Enter a valid 10-digit mobile number." required>
+
+                </td>
             </tr>
 
             <tr>
                 <td>Email</td>
-                <td><input type="email" name="email"></td>
+
+                <td>
+
+                    <input type="email" name="email" placeholder="abc@gmail.com">
+
+                </td>
             </tr>
 
             <tr>
                 <td>Address</td>
+
                 <td>
-                    <textarea rows="4" cols="30"></textarea>
+
+                    <textarea rows="4" cols="35" placeholder="Enter your address"></textarea>
+
                 </td>
             </tr>
 
             <tr>
                 <td>Upload Photograph</td>
-                <td><input type="file"></td>
+
+                <td>
+
+                    <input type="file" name="photo" accept="image/*">
+
+                </td>
             </tr>
 
         </table>
 
         <br>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="submit" value="Register">
+
+        <input type="reset" value="Clear">
 
     </form>
 
